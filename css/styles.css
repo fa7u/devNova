@@ -1,9 +1,12 @@
 @font-face {
-  font-family: myFont;
+  font-family: watad;
   src: url("../font/V2F0YWQub3RmMTY1ODA0NDU1NTg1MQ.otf");
 }
+@font-face {
+  font-family: quest;
+  src: url("../font/QuestR.ttf");
+}
 body {
-  font-family: myFont;
 }
 .container {
   margin-left: auto;
@@ -33,18 +36,19 @@ body {
   }
 }
 
-.card {
+.devNova-page {
   background-image: url(../assets/BG-image.png);
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: watad;
 }
 
-.card .content {
+.devNova-page .content {
   width: 70%;
   max-width: 1400px;
   display: flex;
@@ -54,29 +58,29 @@ body {
   gap: 100px;
 }
 @media (max-width: 992px) {
-  .card .content {
+  .devNova-page .content {
     width: 90%;
   }
 }
 
-.card .content .devNova {
+.devNova-page .content .devNova {
   width: 50%;
 }
 @media (max-width: 768px) {
-  .card .content .devNova {
+  .devNova-page .content .devNova {
     width: 60%;
   }
 }
 @media (max-width: 576px) {
-  .card .content .devNova {
+  .devNova-page .content .devNova {
     width: 80%;
   }
 }
-.card .content .social-media {
+.devNova-page .content .social-media {
   display: flex;
   gap: 30px;
 }
-.card .content .social-media .prog {
+.devNova-page .content .social-media .prog {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,20 +89,20 @@ body {
   border-radius: 8px;
   background-color: white;
 }
-.soon {
+.devNova-page .soon {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
 }
 @media (max-width: 768px) {
-  .soon {
+  .devNova-page .soon {
     width: 80%;
     justify-content: space-between;
   }
 }
 
-.soon h2 {
+.devNova-page .soon h2 {
   font-size: 64px;
   font-weight: 400;
   line-height: 79.68px;
@@ -108,23 +112,170 @@ body {
   opacity: 0.5;
 }
 @media (max-width: 1200px) {
-  .soon h2:nth-child(n + 6) {
+  .devNova-page .soon h2:nth-child(n + 6) {
     display: none;
   }
 }
 @media (max-width: 992px) {
-  .soon h2:nth-child(n + 5) {
+  .devNova-page .soon h2:nth-child(n + 5) {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .soon h2:nth-child(n + 4) {
+  .devNova-page .soon h2:nth-child(n + 4) {
     display: none;
   }
 }
 
 @media (max-width: 576px) {
-  .soon h2 {
+  .devNova-page .soon h2 {
+    font-size: 32px;
+    line-height: 39.84px;
+  }
+}
+/* ########################################################################################## */
+.daawa-page {
+  font-family: quest;
+  background-image: url(../assets/daawa-BG-image.svg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.daawa-page .content {
+  width: 90%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .daawa-page .content {
+    flex-direction: column;
+  }
+}
+
+.daawa-page .content .daawa-color {
+  color: rgba(231, 186, 116, 1);
+}
+.daawa-page .content .daawa-logo {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.daawa-page .content .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .daawa-page .content .right {
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .daawa-page .content .daawa-logo {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .daawa-page .content .daawa-logo {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+/* start text */
+.daawa-page .text {
+  text-align: right;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .daawa-page .text {
+    /* width: 55%; */
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .daawa-page .text {
+    /* width: 90%; */
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .daawa-page .text {
+    font-size: 26px;
+  }
+}
+.daawa-page .text p:first-child {
+  margin: 0;
+}
+
+.daawa-page .content .social-media {
+  display: flex;
+  gap: 30px;
+}
+.daawa-page .content .social-media .prog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(0, 173, 169, 1);
+}
+.daawa-page .soon {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .daawa-page .soon {
+    width: 80%;
+    justify-content: space-between;
+  }
+}
+
+.daawa-page .soon h2 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 79.68px;
+  text-align: center;
+  color: rgba(0, 173, 169, 1);
+  opacity: 0.3;
+}
+@media (max-width: 1200px) {
+  .daawa-page .soon h2:nth-child(n + 6) {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .daawa-page .soon h2:nth-child(n + 5) {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .daawa-page .soon h2:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .daawa-page .soon h2 {
     font-size: 32px;
     line-height: 39.84px;
   }
